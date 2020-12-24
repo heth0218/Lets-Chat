@@ -16,6 +16,10 @@ app.use(function (req, res, next) {
 app.use('/api/user', require('./routes/user'));
 app.use('/api/chat', require('./routes/chat'))
 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'))
+}
+
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, () => {
