@@ -1,0 +1,40 @@
+{
+  "name": "Mychat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.3.0",
+    "config": "^3.3.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.0",
+    "express-validator": "^6.6.1",
+    "fuse.js": "^6.4.3",
+    "fuzzy-search": "^3.2.1",
+    "helmet": "^4.2.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.11",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.14",
+    "nodemon": "^2.0.6",
+    "pusher": "^4.0.2",
+    "razorpay": "^2.0.6",
+    "uid": "^1.0.0",
+    "uuid": "^8.3.1",
+    "xss-clean": "^0.1.1"
+  }
+}
