@@ -16,6 +16,12 @@ app.use(function (req, res, next) {
 app.use('/api/user', require('./routes/user'));
 app.use('/api/chat', require('./routes/chat'))
 
+app.get('/', () => {
+    res.send({
+        msg: "hello"
+    })
+})
+
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'))
 }
