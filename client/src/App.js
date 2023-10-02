@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Chat from '../src/components/Chat'
 import 'materialize-css/dist/css/materialize.min.css'
 import M from "materialize-css/dist/js/materialize.min.js";
